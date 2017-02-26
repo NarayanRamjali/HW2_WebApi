@@ -1,0 +1,169 @@
+{
+	"id": "e501328c-5e8b-092f-878f-c7181bce5f39",
+	"name": "HW2_Apigee",
+	"description": "",
+	"order": [
+		"e3e8c4b8-b971-526c-3ed3-04c853a06cc9",
+		"4b9bb1da-a7ab-b649-3997-ee10a2644d53",
+		"b0c31a9b-1d09-d654-ab03-ad89104fb6b0",
+		"b82fc0d6-c9bd-ba0d-caea-f03432d1cc45"
+	],
+	"folders": [],
+	"timestamp": 1488085864752,
+	"owner": "1501553",
+	"public": false,
+	"requests": [
+		{
+			"id": "4b9bb1da-a7ab-b649-3997-ee10a2644d53",
+			"headers": "",
+			"url": "http://rsmjsli1991-test.apigee.net/ramjali_hw2",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e501328c-5e8b-092f-878f-c7181bce5f39",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://rsmjsli1991-test.apigee.net/ramjali_hw2",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1488085905235,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "b0c31a9b-1d09-d654-ab03-ad89104fb6b0",
+			"headers": "",
+			"url": "http://rsmjsli1991-test.apigee.net/ramjali_hw2",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "e501328c-5e8b-092f-878f-c7181bce5f39",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://rsmjsli1991-test.apigee.net/ramjali_hw2",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1488085915348,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "b82fc0d6-c9bd-ba0d-caea-f03432d1cc45",
+			"headers": "",
+			"url": "http://rsmjsli1991-test.apigee.net/ramjali_hw2",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "e501328c-5e8b-092f-878f-c7181bce5f39",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://rsmjsli1991-test.apigee.net/ramjali_hw2",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1488085924046,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e3e8c4b8-b971-526c-3ed3-04c853a06cc9",
+			"headers": "",
+			"url": "http://rsmjsli1991-test.apigee.net/ramjali_hw2",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e501328c-5e8b-092f-878f-c7181bce5f39",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://rsmjsli1991-test.apigee.net/ramjali_hw2",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1488085864752,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 503,
+						"name": "Service Unavailable",
+						"detail": "The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.",
+						"fromServer": true
+					},
+					"time": 275,
+					"headers": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 05:10:36 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"error\": \"api.usergrid.com is deprecated; see the following for more details: https://community.apigee.com/articles/34480/new-api-baas-trial.html\"}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"responseSize": {
+						"body": 148,
+						"header": 173
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJlcnJvciI6ICJhcGkudXNlcmdyaWQuY29tIGlzIGRlcHJlY2F0ZWQ7IHNlZSB0aGUgZm9sbG93aW5nIGZvciBtb3JlIGRldGFpbHM6IGh0dHBzOi8vY29tbXVuaXR5LmFwaWdlZS5jb20vYXJ0aWNsZXMvMzQ0ODAvbmV3LWFwaS1iYWFzLXRyaWFsLmh0bWwifQ==",
+					"state": {
+						"size": "normal"
+					},
+					"id": "e837e2ee-afc4-28c8-59d0-fba005475470",
+					"name": "GET",
+					"request": {
+						"url": "http://rsmjsli1991-test.apigee.net/ramjali_hw2",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

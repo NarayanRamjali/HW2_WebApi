@@ -1,0 +1,364 @@
+{
+	"id": "2e798d26-226e-1ab9-b4f5-26844b52fa90",
+	"name": "hw2",
+	"description": "",
+	"order": [
+		"e429dce0-8cd5-a93e-e410-ffbc58bb151d",
+		"ab8f2448-a365-686e-8f1c-3a030c64bf84",
+		"6d697349-62fd-8144-aff9-ce602579e683",
+		"72eda0f7-833f-437f-2212-b8ef2c776c47",
+		"8940ebf8-2f26-2c5f-ddc8-ef9616222a69"
+	],
+	"folders": [],
+	"timestamp": 1488062627161,
+	"owner": "1501553",
+	"public": false,
+	"requests": [
+		{
+			"id": "6d697349-62fd-8144-aff9-ce602579e683",
+			"headers": "",
+			"url": "http://127.0.0.1:10010/vehicle",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "2e798d26-226e-1ab9-b4f5-26844b52fa90",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://127.0.0.1:10010/vehicle",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1488085566786,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 405,
+						"name": "Method Not Allowed",
+						"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource.",
+						"fromServer": true
+					},
+					"time": 18,
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "134",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 05:06:26 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Route defined in Swagger specification (/vehicle) but there is no defined put operation.\",\"allowedMethods\":[\"GET\",\"POST\"]}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"responseSize": {
+						"body": 134,
+						"header": 222
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJtZXNzYWdlIjoiUm91dGUgZGVmaW5lZCBpbiBTd2FnZ2VyIHNwZWNpZmljYXRpb24gKC92ZWhpY2xlKSBidXQgdGhlcmUgaXMgbm8gZGVmaW5lZCBwdXQgb3BlcmF0aW9uLiIsImFsbG93ZWRNZXRob2RzIjpbIkdFVCIsIlBPU1QiXX0=",
+					"state": {
+						"size": "normal"
+					},
+					"id": "3d84825a-de66-25bb-ae2f-501b68ee529b",
+					"name": "PUT",
+					"request": {
+						"url": "http://127.0.0.1:10010/vehicle",
+						"headers": [],
+						"data": null,
+						"method": "PUT",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "72eda0f7-833f-437f-2212-b8ef2c776c47",
+			"headers": "",
+			"url": "http://127.0.0.1:10010/vehicle",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "2e798d26-226e-1ab9-b4f5-26844b52fa90",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://127.0.0.1:10010/vehicle",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1488085601542,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 405,
+						"name": "Method Not Allowed",
+						"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource.",
+						"fromServer": true
+					},
+					"time": 18,
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": ""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST",
+							"name": "Allow",
+							"description": ""
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": ""
+						},
+						{
+							"key": "Content-Length",
+							"value": "134",
+							"name": "Content-Length",
+							"description": ""
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": ""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 05:06:26 GMT",
+							"name": "Date",
+							"description": ""
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Route defined in Swagger specification (/vehicle) but there is no defined put operation.\",\"allowedMethods\":[\"GET\",\"POST\"]}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"responseSize": {
+						"body": 134,
+						"header": 222
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJtZXNzYWdlIjoiUm91dGUgZGVmaW5lZCBpbiBTd2FnZ2VyIHNwZWNpZmljYXRpb24gKC92ZWhpY2xlKSBidXQgdGhlcmUgaXMgbm8gZGVmaW5lZCBwdXQgb3BlcmF0aW9uLiIsImFsbG93ZWRNZXRob2RzIjpbIkdFVCIsIlBPU1QiXX0=",
+					"state": {
+						"size": "normal"
+					},
+					"id": "f9aa2755-8e81-08cb-ef7a-158d82cb14ef",
+					"name": "DELETE",
+					"request": {
+						"url": "http://127.0.0.1:10010/vehicle",
+						"headers": [],
+						"data": null,
+						"method": "DELETE",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "8940ebf8-2f26-2c5f-ddc8-ef9616222a69",
+			"headers": "",
+			"url": "http://127.0.0.1:10010/vehicle",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "2e798d26-226e-1ab9-b4f5-26844b52fa90",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://127.0.0.1:10010/vehicle",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1488085618555,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ab8f2448-a365-686e-8f1c-3a030c64bf84",
+			"headers": "",
+			"url": "http://127.0.0.1:10010/vehicle",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "2e798d26-226e-1ab9-b4f5-26844b52fa90",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://127.0.0.1:10010/vehicle",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1488085535813,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 400,
+						"name": "Bad Request",
+						"detail": "The request cannot be fulfilled due to bad syntax.",
+						"fromServer": true
+					},
+					"time": 29,
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "97",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 05:05:48 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Invalid content type (application/octet-stream).  These are valid: application/json\"}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"responseSize": {
+						"body": 97,
+						"header": 196
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJtZXNzYWdlIjoiSW52YWxpZCBjb250ZW50IHR5cGUgKGFwcGxpY2F0aW9uL29jdGV0LXN0cmVhbSkuICBUaGVzZSBhcmUgdmFsaWQ6IGFwcGxpY2F0aW9uL2pzb24ifQ==",
+					"state": {
+						"size": "normal"
+					},
+					"id": "ebeb9b01-efb1-60b0-380a-5e4f82bff499",
+					"name": "POST",
+					"request": {
+						"url": "http://127.0.0.1:10010/vehicle",
+						"headers": [],
+						"data": null,
+						"method": "POST",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e429dce0-8cd5-a93e-e410-ffbc58bb151d",
+			"headers": "",
+			"url": "http://rsmjsli1991-test.apigee.net/ramjalihw2",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "2e798d26-226e-1ab9-b4f5-26844b52fa90",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://rsmjsli1991-test.apigee.net/ramjalihw2",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1488062692995,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

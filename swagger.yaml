@@ -1,0 +1,184 @@
+# Narayan Ramjali
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: CarSell App
+# during dev, should point to your local machine
+host: localhost:10010
+# basePath prefixes all resource paths
+basePath: /
+#
+schemes:
+  # tip: remove http to make production-grade
+  - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /vehicle:
+    # our controller name
+    x-swagger-router-controller: vehicle
+    get:
+      operationId: getAll
+      description: get the vehicle list
+      # define the type of response for Success "200" and Error
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/GetVehiclesListResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+    post:
+      operationId: save
+      description: add a new vehicle to the list
+      # movie info to be stored
+      parameters:
+        - name: make
+          description: Vehicle properties
+          in: body
+          required: true
+          schema:
+            $ref: "#/definitions/Vehicle"
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/GeneralResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /movie/{id}:
+    # our controller name
+    x-swagger-router-controller: vehicle
+    get:
+      operationId : getOne
+      description: get a vehicle
+      # define the type of response for Success "200" and Error
+      parameters:
+        - name: id
+          type: string
+          in: path
+          required: true
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/GetVehicleResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+    put:
+      operationId : update
+      description: update a vehicle
+      # define the parameters
+      parameters:
+        - name: id
+          description: Vehicle id
+          type: string
+          in: path
+          required: true
+        - name: make
+          description: Vehicle properties
+          in: body
+          required: true
+          schema:
+            $ref: "#/definitions/Vehicle"
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/GeneralResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+    delete:
+      operationId : delvehicle
+      description: delete a vehicle
+      # define the parameters
+      parameters:
+        - name: id
+          description: Vehicle id
+          type: string
+          in: path
+          required: true
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/GeneralResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /swagger:
+    x-swagger-pipe: swagger_raw
+# complex objects have schema definitions
+definitions:
+  GetVehiclesListResponse:
+    required:
+      - vehicles
+    properties:
+      # The array of vehicles
+      vehicles:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: string
+            make:
+              type: string
+            year:
+              type: number
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
+  GetVehicleResponse:
+    required:
+      - id
+      - make
+      - year
+    properties:
+      id:
+        type: string
+      make:
+        type: string
+      year:
+        type: number
+  Vehicle:
+    type: object
+    properties:
+      make:
+        type: string
+        description: task object name
+      year:
+        type: number
+        description: task description
+    required:
+      - make
+      - year
+  GeneralResponse:
+    type: object
+    properties:
+      success:
+        type: number
+        description: returns 1 if successful
+      description:
+        type: string
+        description: a short comment
+    required:
+      - success
+      - description
